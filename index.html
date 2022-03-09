@@ -5,12 +5,39 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./css/estilos.css">
     <script src="./js/variables.js"></script>
     <script src="./js/objetoConversor.js"></script>
     <script src="./js/app.js"></script>
     <script src="./js/arrays.js"></script>
 </head>
 <body>
-    
+    <main>
+        <h1>Conversor de divisas a Pesos Argentinos</h1>
+        
+        <h3>Seleccione la moneda que desea convertir</h3>
+        <select name="" id="">
+            <option value=""></option>
+            <option value="">Dolar</option>
+            <option value="">Euro</option>
+            <option value="">Real</option>
+            <option value="">Libra</option>
+            <option value="">Rublo</option>
+        </select>
+        <div class="alineacion">
+            <div>
+                <h3>Ingrese la cantidad que desea convertir</h3>
+                <label for="tipoMoneda">$
+                    <input type="number" id="tipoMoneda" name="tipoMoneda">
+                </label>
+            </div>
+            <div>
+                <label for="pesos">$
+                    <input type="number" id="pesos" name="pesos">Pesos Argentinos
+                </label>
+            </div>
+        </div>
+        <button>Convertir</button>
+    </main>
 </body>
 </html>

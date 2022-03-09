@@ -1,0 +1,13 @@
+main{
+    background-color: antiquewhite;
+    text-align: center;
+}
+
+.alineacion{
+    display: flex;
+    flex-direction: column;
+}
+
+.alineacion div{
+    padding: 1rem;
+}

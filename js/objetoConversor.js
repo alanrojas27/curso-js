@@ -1,12 +1,12 @@
 class Convertir {
-    constructor(dolar) {
-        this.dolar = dolar
+    constructor(monedaExtranjera) {
+        this.monedaExtranjera = monedaExtranjera
     }
 
     calcularValorDolar() {
         let impuesto = impuestoPais / 100 * pesoArgentino
         let valorEnPesos = impuesto + pesoArgentino
-        let resultado = dolar * valorEnPesos
+        let resultado = monedaExtranjera * valorEnPesos
         return parseFloat(resultado)
     }
 }
