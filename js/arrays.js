@@ -19,3 +19,6 @@ function eliminarMoneda() {
 }
 
 
+function cargarResultado() {
+
+}
