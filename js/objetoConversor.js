@@ -1,9 +1,13 @@
 class Convertir {
-    constructor(monedaExtranjera) {
-        this.monedaExtranjera = monedaExtranjera
+    constructor(val) {
+        this.val = val
     }
     
-
+    calcularConversion(cantMon, tipoMon) {
+        const conversion = parseInt(tipoMon) * parseInt(cantMon)
+        const valorFinal = conversion * 0.30 
+        return valorFinal.toFixed(2)
+    }
 
 }
 

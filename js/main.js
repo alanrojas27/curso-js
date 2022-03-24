@@ -1,4 +1,6 @@
 debugger
+const cme = new Convertir(valores)
+
 const listMonedas = ()=> {
     let optionM
     for (tipoMoneda of valores) {
@@ -10,6 +12,9 @@ const listMonedas = ()=> {
 
 listMonedas()
 
+const cargaMonedaExtranjera = ()=> {
+
+}
 
 
 const calcularValor = (valMoneda, pesoArgentino) => {
@@ -22,10 +27,11 @@ const calcularValor = (valMoneda, pesoArgentino) => {
 
 
 const convertir = ()=> {
-    v = selector.value
-    p = pesos.value
-    valorConver = calcularValor(v, p)
-    tipoMoneda.innerText = `$ ${valorConver}`
+    debugger
+    v = parseFloat(selector.value)
+    p = parseFloat(pesos.value)
+    valorConver = cme.calcularConversion(p, v)
+    resultado.innerText = `$ ${valorConver}`
 }
 
 convertir()

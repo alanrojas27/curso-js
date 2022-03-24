@@ -1,9 +1,3 @@
-let impuestoPais = 30
-let pesoArgentino = 0
-let monedaExtranjera = 0
-
-debugger
-
 const valores =     [{"moneda": 'DOLAR', "precio":109.54}, 
                     {"moneda": 'REAL', "precio":21.80},
                     {"moneda":'EURO', "precio":121.26},
@@ -14,5 +8,8 @@ const valores =     [{"moneda": 'DOLAR', "precio":109.54},
 const selector = document.querySelector ("#selector")
 const pesos = document.querySelector ("#pesos")
 const resultado = document.querySelector ("#resultado")
+const btnConvertir = document.querySelector("#btnConvertir")
+
+
 
 debugger
