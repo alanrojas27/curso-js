@@ -9,7 +9,9 @@ const selector = document.querySelector ("#selector")
 const pesos = document.querySelector ("#pesos")
 const resultado = document.querySelector ("#resultado")
 const btnConvertir = document.querySelector("#btnConvertir")
+const btnUltimaConversion = document.querySelector("#btnUltimaConversion")
+const btnGuardarUltimaConversion = document.querySelector("#btnGuardarUltimaConversion")
 
 
 
-debugger
+
