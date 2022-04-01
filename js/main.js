@@ -32,6 +32,7 @@ const convertir = ()=> {
     p = parseFloat(pesos.value)
     valorConver = cme.calcularConversion(p, v)
     resultado.innerText = `$ ${valorConver}`
+    mensajeToast()
 }
 
 convertir()
