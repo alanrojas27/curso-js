@@ -12,9 +12,8 @@ const listMonedas = ()=> {
 
 listMonedas()
 
-const cargaMonedaExtranjera = ()=> {
 
-}
+
 
 
 const calcularValor = (valMoneda, pesoArgentino) => {
@@ -22,28 +21,30 @@ const calcularValor = (valMoneda, pesoArgentino) => {
     let valorEnPesos = impuesto + pesoArgentino
     let resultado = valMoneda * valorEnPesos
     return parseFloat(resultado)
-}
+    }
 
 
+
+    const faltaDatos = ()=> {
+        return pesos.value == ""
+    }
 
 const convertir = ()=> {
-    debugger
-    v = parseFloat(selector.value)
-    p = parseFloat(pesos.value)
-    valorConver = cme.calcularConversion(p, v)
-    resultado.innerText = `$ ${valorConver}`
-    mensajeToast()
+    // if (faltaDatos()){
+    //     alert("Faltan datos para la conversion")
+    //     return
+    // }else{
+    // v = parseFloat(selector.value)
+    // p = parseFloat(pesos.value)
+    // valorConver = cme.calcularConversion(p, v)
+    // resultado.innerText = `$ ${valorConver}`
+    // mensajeToast()
+    // }
+
+    faltaDatos() ? alert("Faltan datos para la conversion") :   v = parseFloat(selector.value)
+                                                                p = parseFloat(pesos.value)
+                                                                valorConver = cme.calcularConversion(p, v)
+                                                                resultado.innerText = `$ ${valorConver}`
+                                                                mensajeToast()
 }
 
-convertir()
-
-
-
-
-//selector
-// const cargaMoneda = ()=> {
-//     let optionM
-//         for(val of valores) {
-
-//         }
-// }
